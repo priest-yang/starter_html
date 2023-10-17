@@ -6,8 +6,8 @@ body{
 }
 
 header > nav{
-	background-color: rgb(247, 181, 88);
-	border-radius: 20cm;
+	background-color: rgba(247, 181, 88, .3);
+	border-radius: 20px;
 	padding: 10px;
 }
 
@@ -15,6 +15,7 @@ header > nav{
 h1{
 	font-size: 2em; 
 	font-weight: bold;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .active{
@@ -34,9 +35,9 @@ h1{
 img{
     height: 150px;
 	width:auto;
-    border: 3px solid rgb(121, 121, 250);
+    border: 3px solid rgba(121, 121, 250, .5);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 5px;
 	margin-left: 10%
 }
@@ -57,7 +58,8 @@ p, h1, h2 {
 items in the nav section*/
 nav ul li{
 	display: inline-block;
-	background-color: bisque;
+	background-color: rgb(255, 208, 151);
+	border-radius: 10px;
 	margin: 5px 5%;
 	padding: 15px;
 	padding: 10px 10px 10px 10px;
@@ -100,32 +102,121 @@ nav a{
   }
 
 
+/* main */
 main{
 	display: grid;
 	width: 90%;
 	margin: 0 auto;  /*Set grid in center*/
-	grid-template-columns: 30% 30% 30%;
+	grid-template-columns: 0.9fr; 
+	grid-auto-rows: 1fr;
 	justify-content: space-between;
 	row-gap:10px;
 
 }
 
-.grid div{
+main h2{
+	display: block;
+	background-color: beige;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 10px;
+}
+
+main h3{
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main div{
     border: solid 1px black;
+	margin: 0px 5px 0 5px;
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 30px 10px;
+	/* grid-row: span 2;  */
     background-color: bisque;
+	overflow: auto;
     /* Set border properties, padding, and background color */
 
 }
 
-.grid img{
+main img{
     /* center  */
     display: block;
-    margin: 0 auto;
-    width: 95%;
+    margin: 10px auto;
+} 
 
-    /* Set width, margin, and display */
+main ul li{
+	margin: 0px 0px 5px 30px;
+    line-height: 1;
+	list-style: url("../images/sketchbook.png");
+}
+
+main ol li{
+	margin: 0px 0px 5px 30px;
+    line-height: 1;
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 800px){
+
+main{
+	display: grid;
+	width: 90%;
+	margin: 0 auto;  /*Set grid in center*/
+	grid-template-columns: repeat(3, 0.9fr); 
+	grid-template-rows: 300px 300px;
+	justify-content: space-between;
+	row-gap:10px;
+
+}
+
+main h2{
+	display: block;
+	background-color: beige;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 10px;
+}
+
+main h3{
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main div{
+    border: solid 1px black;
+	margin: 0px 5px 0 5px;
+    border-radius: 10px;
+    padding: 30px 10px;
+    background-color: bisque;
+	overflow: auto;
+    /* Set border properties, padding, and background color */
+
+}
+
+main img{
+    /* center  */
+    display: block;
+    margin: 10px auto;
+} 
+
+main ul li{
+	margin: 0px 0px 5px 30px;
+    line-height: 1;
+	list-style: url("../images/sketchbook.png");
+}
+
+main ol li{
+	margin: 0px 0px 5px 30px;
+    line-height: 1;
+
+}
+
 }
 
 
