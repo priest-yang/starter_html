@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
     <title>Travel</title>
 </head>
 <body>
-    <ul>
-        <li><a href = "index.html">home</a></li>
-        <li><a href = "travel.html">travel</a></li>
-        <li><a href = "recipes.html">recipes</a></li>
-    </ul>
-
+    <div class="skip"><a href="index.html">Skip to Main Content</a></div>
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href = "index.html" >Pet</a></li>
+				<li class="active"><a href = "travel.html">Travel</a></li>
+				<li><a href = "recipes.html">Recipe</a></li>
+			</ul>
+		</nav>
+		<h1>Travel</h1>
+	</header>
    
     <main>
         <div>
             <h2>Yellowstone</h2>
     
-            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
-            <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
+            <img src="images/yellowstone_cauldron.webp" width="400" alt="Bubbling cauldron.">
 
             <h3>Geographical Location: North America</h3>
             <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
@@ -36,22 +44,22 @@
             </figure>
 
 
-            <figure>
+            <!-- <figure>
                 <video width="200"  controls>
                     <source src="images/yellowstone_prism.MOV">
                     Your browser does not support the video tag.
                 </video>
                 <figcaption>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
-            </figure>
+            </figure> -->
 
 
-            <figure>
+            <!-- <figure>
                 <video width="200"  controls>
                     <source src="images/yellowstone_buffalo.MOV">
                     Your browser does not support the video tag.
                 </video>
                 <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
-            </figure>
+            </figure> -->
 
             <figure>
                 <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
@@ -83,11 +91,12 @@
             <h2>
                 Iceland
             </h2>
+            <img src= "images/iceland_pic.jpeg" alt="iceland_primary_nongif" width="400">
             <h3>Geographical Location: Europe</h3>
             <p>
                 Iceland is home to three UNESCO-designated world heritage sites. These carefully selected places are areas with legal protection for having such cultural, historical, or scientific significance that they provide outstanding value to humanity.
             </p>
-            <img src= "images/iceland_pic.jpeg" alt="iceland_primary_nongif" width="400">
+            
             
             <h3>Photo Gallery</h3>
             <figure>
@@ -112,7 +121,6 @@
 
         <div>
             <h2>Niagara Falls</h2>
-            <img src="images/Niagara_Falls_gif.gif" width="400" alt="Niagara Falls">
             <img src="images/Niagara_Falls_Rainbow.jpg" width="400" alt="Niagara Falls"> 
         
             <h3>Geographical Location: North America</h3>
